@@ -393,6 +393,7 @@ function App() {
             <SectionHeader
               title="About Us"
               tagline="Experience & Expertise — IT Solutions & Executive Search Company"
+              showKicker={false}
             />
 
             <motion.div
@@ -818,7 +819,7 @@ function HeroScene() {
   );
 }
 
-function SectionHeader({ title, tagline }) {
+function SectionHeader({ title, tagline, showKicker = true }) {
   return (
     <motion.div
       className="section-header"
@@ -827,7 +828,7 @@ function SectionHeader({ title, tagline }) {
       viewport={{ once: true, amount: 0.35 }}
       transition={{ duration: 0.62 }}
     >
-      <p className="section-kicker">{title}</p>
+      {showKicker && <p className="section-kicker">{title}</p>}
       <h2>{title}</h2>
       {tagline && <p>{tagline}</p>}
     </motion.div>
