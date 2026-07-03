@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.vercel/
+.chrome-*/
+.repo-archive/
+repo-source/
+*.log
+qa-*.png
+itnspire-main.zip
+assets/hero.mp4
+assets/original-*
+assets/repo-metadata.json
