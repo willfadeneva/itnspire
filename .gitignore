@@ -10,3 +10,10 @@ itnspire-main.zip
 assets/hero.mp4
 assets/original-*
 assets/repo-metadata.json
+
+.pnpm-store/
+hero.mp4
+logo.jpg
+project-info.md
+script.js
+styles.css
